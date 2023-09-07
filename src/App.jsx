@@ -14,8 +14,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Valor del campo de entrada:', inputValue);
-    if (inputValue == 'admin') {
+    if (inputValue == 'weles rico') {
       window.location.href = URL;
       setErrorForm(false);
     }
@@ -29,11 +28,11 @@ function App() {
       <h1>Carta</h1>
       <form onSubmit={handleSubmit}>
         <label style={labelStyle}>
-          Contraseña:
+          Contraseña(la frase que mas utilizamos):
           
         </label>
         <input
-            type="password"
+            type="text"
             value={inputValue}
             onChange={handleInputChange}
             style={errorForm ? inputStyleError : inputStyle}
