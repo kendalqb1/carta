@@ -23,16 +23,16 @@ function App() {
       <h1>Carta</h1>
       <form onSubmit={handleSubmit}>
         <label style={labelStyle}>
-          Ingrese un valor:
+          Contraseña:
           <input
-            type="text"
+            type="password"
             value={inputValue}
             onChange={handleInputChange}
             style={inputStyle}
           />
         </label>
         <button type="submit" style={buttonStyle}>
-          Enviar
+          Ir a la carta
         </button>
       </form>
     </>
