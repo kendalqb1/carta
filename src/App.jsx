@@ -28,7 +28,7 @@ function App() {
       <h1>Carta</h1>
       <form onSubmit={handleSubmit}>
         <label style={labelStyle}>
-          Contraseña(la frase que mas utilizamos):
+          Contraseña (la frase que mas utilizamos):
           
         </label>
         <input
@@ -37,6 +37,9 @@ function App() {
             onChange={handleInputChange}
             style={errorForm ? inputStyleError : inputStyle}
           />
+          {
+            errorForm && <p style={labelError}>Frase incorrecta</p>
+          }
         <button type="submit" style={buttonStyle}>
           Ver carta
         </button>
@@ -49,6 +52,12 @@ const labelStyle = {
   display: 'block',
   marginBottom: '15px',
 }
+
+const labelError = {
+  color: '#FF0000',
+  marginBottom: '30px'
+}
+
 
 const inputStyleError = {
   padding: '8px 16px',
