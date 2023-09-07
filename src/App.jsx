@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [URL, setURL] = useState('https://www.greetingsisland.com/ecard/pn0kyuzey2oc');
+  const [URL, setURL] = useState('https://www.greetingsisland.com/ecard/ps5yiultmgqy');
   const [errorForm, setErrorForm] = useState(false)
 
 
