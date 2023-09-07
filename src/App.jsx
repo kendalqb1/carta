@@ -14,7 +14,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (inputValue == 'weles rico') {
+    if (inputValue == 'weles rico' || inputValue == 'Weles rico') {
       window.location.href = URL;
       setErrorForm(false);
     }
