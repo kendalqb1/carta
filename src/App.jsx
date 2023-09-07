@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [URL, setURL] = useState('https://www.greetingsisland.com/ecard/ps5yiultmgqy');
+  console.log(import.meta.env.VITE_REACT_APP_URL)
+  const [URL, setURL] = useState(import.meta.env.VITE_REACT_APP_URL);
   const [errorForm, setErrorForm] = useState(false)
 
 
